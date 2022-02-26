@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="assets/styles.css" rel="stylesheet" type="text/css" />
+<title>Made in ViM - About</title>
+</head>
+<body>
+<header>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+<section id="header">
+<div class="pro-img"></div>
+<h1>About Page From ViM</h1>
+<p>
+1+ yrs of remote experience developing products, working in cross-functional teams. Putting my skills to use helping others like me slide into the tech space.
+
+<a href="https://linktr.ee/idongessien">All my links</a>
+</p>
+</section>
+</header>
+<footer>
+<small>&copy; <span id="crYear"></span> idong essien</small>
+</footer>
+<script>
+let year = document.querySelector("#crYear");
+console.log(year);
+year.innerHTML = `${new Date().getFullYear()}`;
+</script>
+</body>
+</html>
