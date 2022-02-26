@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="assets/styles.css" rel="stylesheet" type="text/css" />
+<title>Made in ViM - Contact</title>
+</head>
+<body>
+<header>
+<nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+</nav>
+<section id="header">
+<h1>Contact Page From ViM</h1>
+<p>
+Feel free to slide into all my DMs <a href="https://linktr.ee/idongessien" target="_blank" rel="noopener noreferrer">here</a>.
+</p>
+</section>
+<form>
+	<h2>Feel Free to Send a Hello</h2>
+	<input name="fname" id="fname" type="text" placeholder="First name..." />
+	<input name="lname" id="lname" type="text" placeholder="Last name..." />
+	<input name="email" id="email" type="email" placeholder="Email..."  />
+	<input name="subject" id="subject" type="text"  placeholder="Subject" />
+	<textarea id="txtarea" name="txtarea" placeholder="Say hello..."></textarea>
+	<small class="asterik">Form doesn't actually work*</small>
+</form>
+</header>
+<footer>
+<small>&copy; <span id="crYear"></span> idong essien</small>
+</footer>
+<script>
+let year = document.querySelector("#crYear");
+console.log(year);
+year.innerHTML = `${new Date().getFullYear()}`;
+</script>
+</body>
+</html>
